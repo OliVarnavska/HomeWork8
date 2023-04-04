@@ -42,9 +42,9 @@ void FillArray(int[,] matr)
 void SelectionSort(int[,] matr)
 {
 
-    for (int i = 0; i < matr.GetLength(0) ; i++)
+    for (int i = 0; i < matr.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1)- 1; j++)
+        for (int j = 0; j < matr.GetLength(1) - 1; j++)
         {
             int minPosition = j;
             for (int k = j + 1; k < matr.GetLength(1); k++)
@@ -52,11 +52,11 @@ void SelectionSort(int[,] matr)
                 if (matr[i, k] < matr[i, minPosition]) minPosition = k;
             }
             int temp = matr[i, j];
-        matr[i,j] = matr [i,minPosition];
-        matr[i, minPosition] = temp;
+            matr[i, j] = matr[i, minPosition];
+            matr[i, minPosition] = temp;
         }
 
-        
+
     }
 }
 
