@@ -12,9 +12,6 @@ int rows1 = InputNumbers("Введите число строк 1-й матриц
 int column = InputNumbers("Введите число столбцов 1-й матрицы (и строк 2-й): ");
 int columns2 = InputNumbers("Введите число столбцов 2-й матрицы: ");
 
-
-
-
 void MultiplyMatrix(int[,] matr1, int[,] matr2, int[,] matrres)
 {
   for (int i = 0; i < matrres.GetLength(0); i++)
